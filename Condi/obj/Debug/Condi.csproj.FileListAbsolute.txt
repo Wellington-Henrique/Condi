@@ -1,0 +1,9 @@
+c:\users\wellington\documents\visual studio 2015\Projects\Condi\Condi\bin\Debug\Condi.exe.config
+c:\users\wellington\documents\visual studio 2015\Projects\Condi\Condi\bin\Debug\Condi.exe
+c:\users\wellington\documents\visual studio 2015\Projects\Condi\Condi\bin\Debug\Condi.pdb
+c:\users\wellington\documents\visual studio 2015\Projects\Condi\Condi\obj\Debug\Condi.csprojResolveAssemblyReference.cache
+c:\users\wellington\documents\visual studio 2015\Projects\Condi\Condi\obj\Debug\Condi.frmCadCliente.resources
+c:\users\wellington\documents\visual studio 2015\Projects\Condi\Condi\obj\Debug\Condi.csproj.GenerateResource.Cache
+c:\users\wellington\documents\visual studio 2015\Projects\Condi\Condi\obj\Debug\Condi.exe
+c:\users\wellington\documents\visual studio 2015\Projects\Condi\Condi\obj\Debug\Condi.pdb
+c:\Users\Wellington\Documents\Visual Studio 2015\Projects\Condi\Condi\obj\Debug\Condi.Properties.Resources.resources
