@@ -17,7 +17,7 @@ namespace Condi
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmCadCliente());
+            Application.Run(new frmEntrada());
         }
     }
 }

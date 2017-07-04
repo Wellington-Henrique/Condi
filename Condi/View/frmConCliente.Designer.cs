@@ -143,7 +143,8 @@
             this.nome,
             this.cpf,
             this.rg});
-            this.dgvConsulta.Location = new System.Drawing.Point(30, 172);
+            this.dgvConsulta.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dgvConsulta.Location = new System.Drawing.Point(30, 156);
             this.dgvConsulta.Name = "dgvConsulta";
             this.dgvConsulta.ReadOnly = true;
             this.dgvConsulta.RowHeadersVisible = false;
@@ -186,7 +187,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(645, 365);
+            this.ClientSize = new System.Drawing.Size(645, 341);
             this.Controls.Add(this.dgvConsulta);
             this.Controls.Add(this.gpInfoPessoal);
             this.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

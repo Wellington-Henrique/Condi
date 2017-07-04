@@ -59,6 +59,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\frmConSaida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmConSaida.Designer.cs">
+      <DependentUpon>frmConSaida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmEntrada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmEntrada.Designer.cs">
+      <DependentUpon>frmEntrada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmSaida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmSaida.Designer.cs">
+      <DependentUpon>frmSaida.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\frmConCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +90,15 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmConSaida.resx">
+      <DependentUpon>frmConSaida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmEntrada.resx">
+      <DependentUpon>frmEntrada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmSaida.resx">
+      <DependentUpon>frmSaida.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmConCliente.resx">
       <DependentUpon>frmConCliente.cs</DependentUpon>

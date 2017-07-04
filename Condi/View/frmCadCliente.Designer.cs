@@ -32,6 +32,7 @@
             this.gpInfoPessoal = new System.Windows.Forms.GroupBox();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.txtCpf = new System.Windows.Forms.MaskedTextBox();
+            this.btnConsultar = new System.Windows.Forms.Button();
             this.lblRg = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.lblCpf = new System.Windows.Forms.Label();
@@ -44,7 +45,6 @@
             this.lblTelefone = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.btnConsultar = new System.Windows.Forms.Button();
             this.btnCadastrarAtualizar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
@@ -62,8 +62,9 @@
             this.gpInfoPessoal.Controls.Add(this.txtNome);
             this.gpInfoPessoal.Controls.Add(this.lblCpf);
             this.gpInfoPessoal.Controls.Add(this.lblNome);
+            this.gpInfoPessoal.Dock = System.Windows.Forms.DockStyle.Top;
             this.gpInfoPessoal.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.gpInfoPessoal.Location = new System.Drawing.Point(30, 13);
+            this.gpInfoPessoal.Location = new System.Drawing.Point(30, 10);
             this.gpInfoPessoal.Name = "gpInfoPessoal";
             this.gpInfoPessoal.Padding = new System.Windows.Forms.Padding(5);
             this.gpInfoPessoal.Size = new System.Drawing.Size(585, 146);
@@ -87,6 +88,15 @@
             this.txtCpf.Size = new System.Drawing.Size(120, 26);
             this.txtCpf.TabIndex = 3;
             this.txtCpf.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            // 
+            // btnConsultar
+            // 
+            this.btnConsultar.Location = new System.Drawing.Point(468, 102);
+            this.btnConsultar.Name = "btnConsultar";
+            this.btnConsultar.Size = new System.Drawing.Size(109, 36);
+            this.btnConsultar.TabIndex = 3;
+            this.btnConsultar.Text = "Consultar";
+            this.btnConsultar.UseVisualStyleBackColor = true;
             // 
             // lblRg
             // 
@@ -201,18 +211,9 @@
             this.lblEmail.TabIndex = 0;
             this.lblEmail.Text = "Email";
             // 
-            // btnConsultar
-            // 
-            this.btnConsultar.Location = new System.Drawing.Point(462, 97);
-            this.btnConsultar.Name = "btnConsultar";
-            this.btnConsultar.Size = new System.Drawing.Size(109, 36);
-            this.btnConsultar.TabIndex = 3;
-            this.btnConsultar.Text = "Consultar";
-            this.btnConsultar.UseVisualStyleBackColor = true;
-            // 
             // btnCadastrarAtualizar
             // 
-            this.btnCadastrarAtualizar.Location = new System.Drawing.Point(276, 321);
+            this.btnCadastrarAtualizar.Location = new System.Drawing.Point(273, 317);
             this.btnCadastrarAtualizar.Name = "btnCadastrarAtualizar";
             this.btnCadastrarAtualizar.Size = new System.Drawing.Size(109, 36);
             this.btnCadastrarAtualizar.TabIndex = 4;
@@ -221,7 +222,7 @@
             // 
             // btnExcluir
             // 
-            this.btnExcluir.Location = new System.Drawing.Point(391, 321);
+            this.btnExcluir.Location = new System.Drawing.Point(388, 317);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(109, 36);
             this.btnExcluir.TabIndex = 5;
@@ -230,7 +231,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(506, 321);
+            this.btnCancelar.Location = new System.Drawing.Point(503, 317);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(109, 36);
             this.btnCancelar.TabIndex = 6;
