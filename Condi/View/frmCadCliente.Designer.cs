@@ -37,19 +37,19 @@
             this.lblCpf = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
             this.gbInfoContato = new System.Windows.Forms.GroupBox();
+            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
             this.lblCelular = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lblTelefone = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
-            this.pnlBotoes = new System.Windows.Forms.Panel();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnSalvar = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.btnConsultar = new System.Windows.Forms.Button();
+            this.btnCadastrarAtualizar = new System.Windows.Forms.Button();
+            this.btnExcluir = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.gpInfoPessoal.SuspendLayout();
             this.gbInfoContato.SuspendLayout();
-            this.pnlBotoes.SuspendLayout();
             this.SuspendLayout();
             // 
             // gpInfoPessoal
@@ -57,18 +57,18 @@
             this.gpInfoPessoal.BackColor = System.Drawing.Color.Transparent;
             this.gpInfoPessoal.Controls.Add(this.maskedTextBox1);
             this.gpInfoPessoal.Controls.Add(this.txtCpf);
+            this.gpInfoPessoal.Controls.Add(this.btnConsultar);
             this.gpInfoPessoal.Controls.Add(this.lblRg);
             this.gpInfoPessoal.Controls.Add(this.txtNome);
             this.gpInfoPessoal.Controls.Add(this.lblCpf);
             this.gpInfoPessoal.Controls.Add(this.lblNome);
             this.gpInfoPessoal.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.gpInfoPessoal.Location = new System.Drawing.Point(30, 23);
+            this.gpInfoPessoal.Location = new System.Drawing.Point(30, 13);
             this.gpInfoPessoal.Name = "gpInfoPessoal";
             this.gpInfoPessoal.Padding = new System.Windows.Forms.Padding(5);
             this.gpInfoPessoal.Size = new System.Drawing.Size(585, 146);
             this.gpInfoPessoal.TabIndex = 2;
             this.gpInfoPessoal.TabStop = false;
-            this.gpInfoPessoal.Text = "Informações pessoais";
             // 
             // maskedTextBox1
             // 
@@ -137,13 +137,21 @@
             this.gbInfoContato.Controls.Add(this.lblTelefone);
             this.gbInfoContato.Controls.Add(this.lblEmail);
             this.gbInfoContato.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.gbInfoContato.Location = new System.Drawing.Point(30, 175);
+            this.gbInfoContato.Location = new System.Drawing.Point(30, 165);
             this.gbInfoContato.Name = "gbInfoContato";
             this.gbInfoContato.Padding = new System.Windows.Forms.Padding(5);
             this.gbInfoContato.Size = new System.Drawing.Size(585, 146);
             this.gbInfoContato.TabIndex = 2;
             this.gbInfoContato.TabStop = false;
-            this.gbInfoContato.Text = "Contato";
+            // 
+            // maskedTextBox2
+            // 
+            this.maskedTextBox2.Location = new System.Drawing.Point(147, 101);
+            this.maskedTextBox2.Mask = "(99) 99999 - 9999";
+            this.maskedTextBox2.Name = "maskedTextBox2";
+            this.maskedTextBox2.Size = new System.Drawing.Size(132, 26);
+            this.maskedTextBox2.TabIndex = 3;
+            this.maskedTextBox2.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // maskedTextBox3
             // 
@@ -193,66 +201,50 @@
             this.lblEmail.TabIndex = 0;
             this.lblEmail.Text = "Email";
             // 
-            // pnlBotoes
+            // btnConsultar
             // 
-            this.pnlBotoes.Controls.Add(this.btnSalvar);
-            this.pnlBotoes.Controls.Add(this.btnCancelar);
-            this.pnlBotoes.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlBotoes.Location = new System.Drawing.Point(30, 331);
-            this.pnlBotoes.Name = "pnlBotoes";
-            this.pnlBotoes.Size = new System.Drawing.Size(585, 50);
-            this.pnlBotoes.TabIndex = 3;
+            this.btnConsultar.Location = new System.Drawing.Point(462, 97);
+            this.btnConsultar.Name = "btnConsultar";
+            this.btnConsultar.Size = new System.Drawing.Size(109, 36);
+            this.btnConsultar.TabIndex = 3;
+            this.btnConsultar.Text = "Consultar";
+            this.btnConsultar.UseVisualStyleBackColor = true;
+            // 
+            // btnCadastrarAtualizar
+            // 
+            this.btnCadastrarAtualizar.Location = new System.Drawing.Point(276, 321);
+            this.btnCadastrarAtualizar.Name = "btnCadastrarAtualizar";
+            this.btnCadastrarAtualizar.Size = new System.Drawing.Size(109, 36);
+            this.btnCadastrarAtualizar.TabIndex = 4;
+            this.btnCadastrarAtualizar.Text = "Cadastrar";
+            this.btnCadastrarAtualizar.UseVisualStyleBackColor = true;
+            // 
+            // btnExcluir
+            // 
+            this.btnExcluir.Location = new System.Drawing.Point(391, 321);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(109, 36);
+            this.btnExcluir.TabIndex = 5;
+            this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.UseVisualStyleBackColor = true;
             // 
             // btnCancelar
             // 
-            this.btnCancelar.BackgroundImage = global::Condi.Properties.Resources.delete_30;
-            this.btnCancelar.FlatAppearance.BorderSize = 0;
-            this.btnCancelar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(535, 0);
+            this.btnCancelar.Location = new System.Drawing.Point(506, 321);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(50, 50);
-            this.btnCancelar.TabIndex = 0;
-            this.toolTip1.SetToolTip(this.btnCancelar, "Cancelar cadastro.");
+            this.btnCancelar.Size = new System.Drawing.Size(109, 36);
+            this.btnCancelar.TabIndex = 6;
+            this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.MouseLeave += new System.EventHandler(this.btnCancelar_MouseLeave);
-            this.btnCancelar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnCancelar_MouseMove);
-            // 
-            // btnSalvar
-            // 
-            this.btnSalvar.BackgroundImage = global::Condi.Properties.Resources.save_30;
-            this.btnSalvar.FlatAppearance.BorderSize = 0;
-            this.btnSalvar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnSalvar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalvar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalvar.Location = new System.Drawing.Point(479, 0);
-            this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(50, 50);
-            this.btnSalvar.TabIndex = 1;
-            this.btnSalvar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolTip1.SetToolTip(this.btnSalvar, "Salvar o cadastro.");
-            this.btnSalvar.UseVisualStyleBackColor = true;
-            this.btnSalvar.MouseLeave += new System.EventHandler(this.bntSalvar_MouseLeave);
-            this.btnSalvar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.bntSalvar_MouseMove);
-            // 
-            // maskedTextBox2
-            // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(147, 101);
-            this.maskedTextBox2.Mask = "(99) 99999 - 9999";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(132, 26);
-            this.maskedTextBox2.TabIndex = 3;
-            this.maskedTextBox2.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // frmCadCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(645, 401);
-            this.Controls.Add(this.pnlBotoes);
+            this.ClientSize = new System.Drawing.Size(645, 370);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnExcluir);
+            this.Controls.Add(this.btnCadastrarAtualizar);
             this.Controls.Add(this.gbInfoContato);
             this.Controls.Add(this.gpInfoPessoal);
             this.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -261,7 +253,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmCadCliente";
-            this.Padding = new System.Windows.Forms.Padding(30, 20, 30, 20);
+            this.Padding = new System.Windows.Forms.Padding(30, 10, 30, 10);
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Cadastro de clientes";
@@ -269,7 +261,6 @@
             this.gpInfoPessoal.PerformLayout();
             this.gbInfoContato.ResumeLayout(false);
             this.gbInfoContato.PerformLayout();
-            this.pnlBotoes.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -289,11 +280,12 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label lblTelefone;
         private System.Windows.Forms.Label lblEmail;
-        private System.Windows.Forms.Panel pnlBotoes;
-        private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.Button btnConsultar;
+        private System.Windows.Forms.Button btnCadastrarAtualizar;
+        private System.Windows.Forms.Button btnExcluir;
+        private System.Windows.Forms.Button btnCancelar;
     }
 }
 
